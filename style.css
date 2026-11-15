@@ -1,0 +1,197 @@
+
+/* Projects and Contact Sections */
+
+#projects,
+#contact {
+    padding: 80px 10%;
+    scroll-margin-top: 70px;
+}
+
+#projects {
+    background-color: #f8f9fa;
+}
+
+#contact {
+    background-color: #ffffff;
+}
+
+.section-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 45px;
+    font-size: 16px;
+}
+
+/* Projects */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h2 {
+    color: #2563eb;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tech-stack span {
+    background: #e8efff;
+    color: #2563eb;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Contact */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.contact-info h2 {
+    color: #2563eb;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.contact-info p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #2563eb;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-form button:hover {
+    background: #1d4ed8;
+}
+
+#form-status {
+    color: #15803d;
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #projects,
+    #contact {
+        padding: 60px 6%;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+}

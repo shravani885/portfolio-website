@@ -8,7 +8,10 @@
 
     <title>My Portfolio</title>
 
-    <!-- Home and Skills CSS -->
+    <!-- Member 2: Projects and Contact CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Member 1: Home and Skills CSS -->
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/skills.css">
 </head>
@@ -37,17 +40,143 @@
         <!-- Member 1: Skills Module -->
         <div id="skills-module"></div>
 
-        <!-- Member 2: Projects Module -->
-        <section id="projects"></section>
+        <!-- Member 2: Projects -->
+        <section id="projects">
+            <div class="section-container">
 
-        <!-- Member 2: Contact Module -->
-        <section id="contact"></section>
+                <h1 class="section-title">My Projects</h1>
+                <p class="section-description">
+                    Here are some of the projects I have worked on.
+                </p>
+
+                <div class="project-container">
+
+                    <div class="project-card">
+                        <h2>AI Powered Threat Detection</h2>
+                        <p>
+                            Developed an AI-based threat detection system
+                            using XGBoost and Autoencoders to identify
+                            suspicious activities and classify network
+                            traffic as benign or malicious.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>XGBoost</span>
+                            <span>Autoencoders</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h2>Web Security Assessment Suite</h2>
+                        <p>
+                            Developed a Python-based security scanning
+                            tool to identify common web vulnerabilities
+                            based on OWASP Top 10 security risks.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>BeautifulSoup</span>
+                            <span>Requests</span>
+                            <span>OWASP</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h2>Library Management System</h2>
+                        <p>
+                            Developed a library management application
+                            to manage books, student records, issue and
+                            return operations using database connectivity.
+                        </p>
+                        <div class="tech-stack">
+                            <span>C++</span>
+                            <span>MySQL</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Member 2: Contact -->
+        <section id="contact">
+            <div class="section-container">
+
+                <h1 class="section-title">Contact Me</h1>
+                <p class="section-description">
+                    Feel free to get in touch with me.
+                </p>
+
+                <div class="contact-container">
+
+                    <div class="contact-info">
+                        <h2>Let's Connect!</h2>
+                        <p>
+                            Have a question or an opportunity?
+                            I would love to hear from you.
+                        </p>
+
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:yourmail@gmail.com">
+                                yourmail@gmail.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>LinkedIn:</strong>
+                            <a href="https://www.linkedin.com/" target="_blank"
+                               rel="noopener noreferrer">
+                                LinkedIn Profile
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>GitHub:</strong>
+                            <a href="https://github.com/" target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub Profile
+                            </a>
+                        </p>
+                    </div>
+
+                    <form id="contact-form">
+                        <input type="text" id="name"
+                               placeholder="Your Name" required>
+
+                        <input type="email" id="email"
+                               placeholder="Your Email" required>
+
+                        <input type="text" id="subject"
+                               placeholder="Subject" required>
+
+                        <textarea id="message"
+                                  placeholder="Your Message"
+                                  rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+
+                        <p id="form-status" aria-live="polite"></p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <!-- Member 1: Module Loader -->
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Member 2: Contact Form JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Member 1: Home and Skills Module Loader -->
     <script src="scripts/main.js"></script>
 
 </body>
-
 </html>
