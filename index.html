@@ -1,43 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-    <header>
-        <nav>
-            <h2>My Portfolio</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home"></section>
-        <section id="skills"></section>
-        <section id="projects">
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Portfolio</title>
+
+    <!-- Member 2: Projects and Contact CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Member 1: Home and Skills CSS -->
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/skills.css">
 </head>
+
 <body>
 
+    <!-- Navigation Bar -->
     <header>
         <nav>
             <h2>My Portfolio</h2>
+
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -48,13 +33,12 @@
     </header>
 
     <main>
-        <!-- Member 1: Home -->
-        <section id="home">
-        </section>
 
-        <!-- Member 1: Skills -->
-        <section id="skills">
-        </section>
+        <!-- Member 1: Home Module -->
+        <div id="home-module"></div>
+
+        <!-- Member 1: Skills Module -->
+        <div id="skills-module"></div>
 
         <!-- Member 2: Projects -->
         <section id="projects">
@@ -183,9 +167,16 @@
 
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
     </footer>
+
+    <!-- Member 2: Contact Form JavaScript -->
     <script src="script.js"></script>
+
+    <!-- Member 1: Home and Skills Module Loader -->
+    <script src="scripts/main.js"></script>
+
 </body>
 </html>
